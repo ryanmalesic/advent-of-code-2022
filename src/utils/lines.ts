@@ -1,6 +1,6 @@
 import * as fs from "fs"
 
-export const getLines = (day: number, file: "example.txt" | "input.txt") => {
+export const getLines = (day: number, file: "example.txt" | "input.txt" = "input.txt") => {
     const dec = new TextDecoder("utf-8");
     const buffer = fs.readFileSync(`${__dirname}/../day${day}/${file}`)
     const string = dec.decode(new Uint8Array(buffer))
