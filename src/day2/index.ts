@@ -1,5 +1,3 @@
-import { getLines } from "../utils/lines"
-
 const SCORES_1: Record<string, Record<string, number>> = {
     A: { X: 1 + 3, Y: 2 + 6, Z: 3 + 0 },
     B: { X: 1 + 0, Y: 2 + 3, Z: 3 + 6 },
